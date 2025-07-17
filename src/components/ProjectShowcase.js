@@ -44,7 +44,7 @@ export function ProjectShowcase() {
     {
       id: 5,
       title: "Classico",
-      subtitle: "LuxuryRide-Share Landing",
+      subtitle: "Luxury Ride-Share Landing",
       image: classicoImg,
       link: "https://ridewithclassico.com"
     },
@@ -95,17 +95,17 @@ export function ProjectShowcase() {
           alt={projects[currentProject].title}
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-black/30"></div>
+        <div className="absolute inset-0 bg-black/20"></div>
       </div>
 
       {/* Project Info Overlay */}
-      <div className="absolute bottom-20 left-20 right-20">
+      <div className="absolute bottom-0 left-0 right-0 p-8 md:p-12">
         <div className="flex justify-between items-end">
-          <div>
-            <h2 className="text-6xl md:text-8xl font-light mb-4">
+          <div className="flex-1">
+            <h2 className="text-4xl md:text-6xl lg:text-7xl font-light mb-2">
               {projects[currentProject].title}
             </h2>
-            <p className="text-xl text-gray-300 mb-8">
+            <p className="text-lg md:text-xl text-gray-300 mb-4">
               {projects[currentProject].subtitle}
             </p>
             <a
@@ -121,8 +121,8 @@ export function ProjectShowcase() {
             </a>
           </div>
           
-          <div className="text-right">
-            <div className="text-sm text-gray-400 mb-2">
+          <div className="text-right ml-8">
+            <div className="text-sm text-gray-400 mb-4">
               {currentProject + 1} / {projects.length}
             </div>
             <div className="flex space-x-4">
@@ -148,8 +148,8 @@ export function ProjectShowcase() {
       </div>
 
       {/* Navigation Dots */}
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1">
-        <div className="flex space-x-2">
+      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2">
+        <div className="flex space-x-3">
           {projects.map((_, index) => (
             <button
               key={index}

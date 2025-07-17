@@ -102,7 +102,7 @@ export function Contact() {
                   </div>
                   <div>
                     <p className="text-sm text-gray-400 uppercase tracking-wider mb-1">Email</p>
-                    <p className="text-lg">hello@matthewvogelsang.com</p>
+                    <p className="text-lg">vogelsangmatt@gmail.com</p>
                   </div>
                 </div>
                 

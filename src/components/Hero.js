@@ -14,11 +14,11 @@ export function Hero() {
         </div>
         
         <p className="text-xl md:text-2xl text-gray-400 max-w-3xl mx-auto leading-relaxed mb-12">
-          Full-stack developer crafting digital experiences with modern technologies
+          Full-Stack Developer
         </p>
         
         <div className="text-sm text-gray-500 uppercase tracking-wider">
-          Available for freelance work
+          currently available for freelance project
         </div>
       </div>
     </section>
