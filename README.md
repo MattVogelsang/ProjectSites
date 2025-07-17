@@ -1,6 +1,6 @@
 # Matthew Vogelsang - Portfolio
 
-A minimalist, modern portfolio website inspired by Nael Messaoudene's design aesthetic. Built with React and Tailwind CSS.
+Built with React and Tailwind CSS.
 
 ## Features
 

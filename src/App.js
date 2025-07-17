@@ -1,14 +1,15 @@
 // Main React component (App.js)
 import React, { useState, useEffect } from "react";
 import { Hero } from "./components/Hero";
+import { ProjectShowcase } from "./components/ProjectShowcase";
 import { About } from "./components/About";
-import { Projects } from "./components/Projects";
 import { Contact } from "./components/Contact";
 import { Navigation } from "./components/Navigation";
 import "./index.css";
 
 export default function App() {
   const [isLoading, setIsLoading] = useState(true);
+  const [currentSection, setCurrentSection] = useState('index');
 
   useEffect(() => {
     // Simulate loading time
@@ -28,12 +29,19 @@ export default function App() {
   }
 
   return (
-    <div className="bg-black text-white font-light">
-      <Navigation />
-      <Hero />
-      <About />
-      <Projects />
-      <Contact />
+    <div className="bg-black text-white font-light h-screen overflow-hidden">
+      <Navigation currentSection={currentSection} setCurrentSection={setCurrentSection} />
+      
+      {currentSection === 'index' && (
+        <>
+          <Hero />
+          <ProjectShowcase />
+        </>
+      )}
+      
+      {currentSection === 'about' && <About />}
+      
+      {currentSection === 'contact' && <Contact />}
     </div>
   );
 } 
