@@ -2,31 +2,51 @@ import React from "react";
 
 export function Navigation({ currentSection, setCurrentSection }) {
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 px-6 py-8">
-      <div className="flex justify-between items-center">
-        <div className="text-white text-sm uppercase tracking-wider">
-          Matthew Vogelsang
+    <header>
+      <nav className="navigation">
+        <div className="navigation__infos">
+          <h2>
+            <a 
+              aria-current={currentSection === 'index' ? 'page' : undefined}
+              href="/"
+              className={currentSection === 'index' ? 'router-link-active router-link-exact-active' : ''}
+            >
+              <span data-textoriginal="Matt">Matt</span>
+              <span data-textoriginal="Vogelsang">Vogelsang</span>
+            </a>
+          </h2>
+          <h2>
+            <span>Full-Stack</span>
+            <span>Developer</span>
+          </h2>
         </div>
         
-        <div className="flex space-x-8">
-          <button
-            onClick={() => setCurrentSection('index')}
-            className={`text-sm uppercase tracking-wider transition-colors duration-200 ${
-              currentSection === 'index' ? 'text-white' : 'text-gray-500 hover:text-white'
-            }`}
+        <div className="navigation__links">
+          <a 
+            aria-current={currentSection === 'index' ? 'page' : undefined}
+            href="/"
+            className={currentSection === 'index' ? 'router-link-active router-link-exact-active' : ''}
+            onClick={(e) => {
+              e.preventDefault();
+              setCurrentSection('index');
+            }}
           >
-            Index
-          </button>
-          <button
-            onClick={() => setCurrentSection('about')}
-            className={`text-sm uppercase tracking-wider transition-colors duration-200 ${
-              currentSection === 'about' ? 'text-white' : 'text-gray-500 hover:text-white'
-            }`}
+            <span className="navigation__currentLink">INDEX</span>
+            <span className="navigation__duplicateLink">INDEX</span>
+          </a>
+          <a 
+            href="/about"
+            className={currentSection === 'about' ? 'router-link-active router-link-exact-active' : ''}
+            onClick={(e) => {
+              e.preventDefault();
+              setCurrentSection('about');
+            }}
           >
-            About
-          </button>
+            <span className="navigation__currentLink">ABOUT</span>
+            <span className="navigation__duplicateLink">ABOUT</span>
+          </a>
         </div>
-      </div>
-    </nav>
+      </nav>
+    </header>
   );
 } 
