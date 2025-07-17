@@ -6,7 +6,7 @@ import workoutGeneratorImg from '../images/Workout-Generator.jpg';
 import classicoImg from '../images/classico.jpg';
 import spaceTourismImg from '../images/space-hero.jpg';
 import shoppingAppImg from '../images/sneakers-hero.jpg';
-import shop23Img from../images/Shop23.jpg;
+import shop23Img from '../images/Shop23.jpg';
 import swimWithSaraImg from '../images/swim-with-sara.jpg';
 
 export function ProjectShowcase() {
@@ -130,7 +130,7 @@ export function ProjectShowcase() {
                 onClick={prevProject}
                 className="text-white hover:text-gray-300 transition-colors duration-200"
               >
-                <svg className="w-6 fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1" d="M15 19l-7-7 7-7" />
                 </svg>
               </button>
@@ -138,7 +138,7 @@ export function ProjectShowcase() {
                 onClick={nextProject}
                 className="text-white hover:text-gray-300 transition-colors duration-200"
               >
-                <svg className="w-6 fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1" d="M9 5l7 7-7 7" />
                 </svg>
               </button>
