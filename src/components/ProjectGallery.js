@@ -1,29 +1,29 @@
 import React, { useState, useEffect } from 'react';
-import project1 from '../images/project1.jpg';
-import project2 from '../images/project2.jpg';
-import project3 from '../images/project3.jpg';
+import trinityInsurance from '../images/trinity-insurance.jpg';
+import swimWithSara from '../images/swim-with-sara.jpg';
+import projectAtlas from '../images/project-atlas.jpg';
 
 const projects = [
   {
     id: 1,
-    name: 'project1',
-    title: 'E-Commerce Platform',
-    image: project1,
-    description: 'Full-stack e-commerce solution with modern UI/UX'
+    name: 'trinity-insurance',
+    title: 'Trinity Insurance',
+    image: trinityInsurance,
+    description: 'Insurance management platform with modern UI/UX'
   },
   {
     id: 2,
-    name: 'project2',
-    title: 'Task Management App',
-    image: project2,
-    description: 'Collaborative task management with real-time updates'
+    name: 'swim-with-sara',
+    title: 'Swim With Sara',
+    image: swimWithSara,
+    description: 'Swimming instruction and booking platform'
   },
   {
     id: 3,
-    name: 'project3',
-    title: 'Portfolio Website',
-    image: project3,
-    description: 'Creative portfolio showcasing web development skills'
+    name: 'project-atlas',
+    title: 'Project Atlas',
+    image: projectAtlas,
+    description: 'Project management and collaboration tool'
   }
 ];
 
