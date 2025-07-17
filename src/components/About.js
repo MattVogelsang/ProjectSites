@@ -60,7 +60,7 @@ export function About() {
               <h3 className="text-2xl font-light mb-6">Contact</h3>
               <div className="space-y-2">
                 <div className="text-gray-300">ello@matthewvogelsang.com</div>
-                <div className="text-gray-300">San Francisco, CA</div>
+                <div className="text-gray-300">South Florida</div>
                 <div className="text-gray-300">able for freelance work</div>
               </div>
             </div>

@@ -115,7 +115,7 @@ export function Contact() {
                   </div>
                   <div>
                     <p className="text-sm text-gray-400 uppercase tracking-wider mb-1">Location</p>
-                    <p className="text-lg">San Francisco, CA</p>
+                    <p className="text-lg">South Florida</p>
                   </div>
                 </div>
               </div>
